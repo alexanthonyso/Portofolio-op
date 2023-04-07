@@ -80,7 +80,7 @@ header{
 
 .photo{
 border: 1px dashed  #000000 ;
-width: 392px;
+width: 394px;
 height: 408px;
 }
 
@@ -96,16 +96,27 @@ height: 408px;
 .skilltext {
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding-bottom: 18%;
 }
-
+.skilltext p {
+ 
+  border: 1px dashed  #000000 ;
+  padding: 2%;
+}
 
 .languagetext {
 
   display: flex;
   justify-content: space-evenly;
   
+}
+
+.languagetext p{
+
+  border: 1px dashed  #000000 ;
+  padding: 2%;
 }
 
 .more{
