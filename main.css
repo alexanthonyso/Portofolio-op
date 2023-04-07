@@ -35,10 +35,30 @@ h3{
   }
 
 header{
-
+    scroll-snap-align: start;
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 50px;
+   
 
+}
+.btnhome{
+  margin: auto;
+
+  margin-left: 2%;
+  width: 21px;
+  height: 21px;
+  
+  background: #4B4B4B;
+  border: 1px solid #4B4B4B;
+  border-radius: 6px;
+
+}
+
+.btngithub{
+  width: 270px;
+  height: 55px;
+  border: 1px dashed #000000;
 }
 
 
@@ -75,6 +95,15 @@ height: 408px;
 
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 18%;
+}
+
+
+.languagetext {
+
+  display: flex;
+  justify-content: space-evenly;
+  
 }
 
 .more{
@@ -90,11 +119,43 @@ height: 408px;
   margin: 10%;
 }
 
+.bloc2{
+  display: flex;
+  gap: 97px;
+  margin: 10%;
+}
+
+
+.project{
+   
+  border: 1px dashed  #000000 ;
+  width: 614px;
+  height: 408px;
+}
+
+
+.info{
+   
+    border: 1px dashed  #000000 ;
+    width: 583.96px;
+    height: 408px;
+    
+}
+
+
+.contact img {
+
+
+  width: 88px;
+  height: 88px;
+  border: 1px dashed #000000;
+
+}
 nav ul li{
     
-    scroll-snap-align: start;
+   
     height: 100%;
-    padding-top: 50px;
+    
     font-size: 16px;
     padding-inline: 18px;
     /* border: 1px dashed #000000; */
