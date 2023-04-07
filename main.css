@@ -52,6 +52,7 @@ header{
   background: #4B4B4B;
   border: 1px solid #4B4B4B;
   border-radius: 6px;
+  cursor: pointer;
 
 }
 
@@ -59,6 +60,7 @@ header{
   width: 270px;
   height: 55px;
   border: 1px dashed #000000;
+  cursor: pointer;
 }
 
 
@@ -123,6 +125,13 @@ height: 408px;
   display: flex;
   gap: 97px;
   margin: 10%;
+}
+
+.bloc3{
+  display: flex;
+  gap: 97px;
+  margin: 10%;
+  flex-direction: column;
 }
 
 
