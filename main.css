@@ -42,6 +42,7 @@ header{
    
 
 }
+
 .btnhome{
   margin: auto;
 
@@ -56,13 +57,31 @@ header{
 
 }
 
-.btngithub{
-  width: 270px;
-  height: 55px;
-  border: 1px dashed #000000;
-  cursor: pointer;
+.side{
+  position: fixed;
+  z-index: 2;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
+
+.btngithub{
+  display: flex;
+  align-items: center;
+ gap: 25%;
+  width: 270px;
+  height: 55px;
+  border: 1px  dashed #000000;
+  cursor: pointer;
+  background: none;
+}
+
+.btngithub:hover{
+  border: 1px solid  #000000 ;
+  
+  
+}
 
   body {
     margin: 0;
@@ -93,6 +112,11 @@ height: 408px;
     height: 408px;
 }
 
+.skill p,.info p{
+
+  margin-left: 2%;
+}
+
 .skilltext {
 
     display: flex;
@@ -104,6 +128,7 @@ height: 408px;
  
   border: 1px dashed  #000000 ;
   padding: 2%;
+  margin: 1%;
 }
 
 .languagetext {
@@ -132,6 +157,24 @@ height: 408px;
   margin: 10%;
 }
 
+.arrow {
+  display: inline-block;
+  width:8px;
+  height: 8px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+ 
+}
+
+.arrow-left {
+  transform: rotate(-135deg);
+}
+
+.arrow-right {
+  transform: rotate(45deg);
+}
+
+
 .bloc2{
   display: flex;
   gap: 97px;
@@ -149,8 +192,20 @@ height: 408px;
 .project{
    
   border: 1px dashed  #000000 ;
-  width: 614px;
-  height: 408px;
+  width: 616px;
+  height: 410px;
+}
+
+.project img {
+
+  filter: grayscale(100%);
+
+}
+
+.project img:hover{
+
+
+  filter: none;
 }
 
 
@@ -161,7 +216,10 @@ height: 408px;
     height: 408px;
     
 }
-
+.contact{
+  display: flex;
+gap: 10px;
+}
 
 .contact img {
 
@@ -170,6 +228,13 @@ height: 408px;
   height: 88px;
   border: 1px dashed #000000;
 
+}
+
+.contact img:hover {
+
+  border: 1px solid  #000000 ;
+  cursor: pointer;
+  
 }
 nav ul li{
     
@@ -217,11 +282,33 @@ text-decoration: none;
     width: 588px;
     height: 540px;
     margin: 5%;
+    
+    /*This part is important for centering*/
+    display: grid;
 }
 
+.typing-demo {
+  width: 12ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
 
+}
 
-  article{
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+  article {
 
     font-weight: 500;
     font-size: 20px;
