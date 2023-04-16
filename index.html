@@ -29,10 +29,10 @@
 
   <nav>
     <ul>
-
-        <li><a href="#ABOUT">ABOUT</a></li>
-        <li><a href="#WORK">WORK</a></li>
-        <li><a href="#CONTACT">CONTACT</a></li>
+        
+        <li class="nav"><a href="#ABOUT">ABOUT</a></li>
+        <li class="nav"><a href="#WORK">WORK</a></li>
+        <li class="nav"><a href="#CONTACT">CONTACT</a></li>
       
 
     </ul>
@@ -72,6 +72,7 @@
 
     
     <Section id="ABOUT">
+        
         <h2>ABOUT</h2>
         
     <div class="bloc1">
@@ -103,7 +104,10 @@
             <h3>WEB DEVELOPER</h3>
             <p>OPEN CLASSROOMS</p>
             <p>Decembre 2022 - Aout 2023</p>
-            <p>???????????????????????????</p>
+            <p> 1. Construire un site web responsive et dynamique</p> 
+            <p>  2. Créer des API et des bases de données </p> 
+            <p>   3. Optimiser les performances et réaliser la maintenance de sites web déjà existants</p>  
+            <p>   4. Gérer un projet web de A à Z </p>
 
             
 
@@ -123,25 +127,35 @@
         <article class="project">
             
           
-            <img src="img/project/booki.png" alt="">
-            
-        
+            <img src="img/project/booki (2).png" alt="">
+            <button  class="btnmore">MORE</button>
+    
         </article>
-        <article class="info">
+
+
+        <article class="project">
             
-            <H3>INFO</H3>
-            <p>Créez la page d'accueil d'une agence de voyage avec HTML & CSS</p>
-            <h3>LANGAGE</h3>
-            <div class="skilltext">
-            <p>HTML5</p>
-            <P>CSS3</P>
-        </div>
-        
+          
+            <img src="img/project/NINA.png" alt="">
+            <button  class="btnmore">MORE</button>
+            
+    
         </article>
+        <!-- <article class="info">
+            
+            <H3><span class="arrow arrow-left"></span> INFO <span class="arrow arrow-right"></span></H3>
+            <p>Intégrer l'interface du site d'une agence de voyage avec du code HTML et CSS.</p>
+          
+            <p>Installer un environnement de développement front-end</p>
+            <p>Intégrer du contenu conformément à une maquette avec HTML et CSS</p>
+            <p>Implémenter une interface responsive avec HTML et CSS</p>
+            <p>Versionner son projet avec Git et Github</p>
+        
+        </article> -->
        
     
     </div>      
-    <button class="btngithub"><img src="img/pngwing 4.png">GITHUB</button>
+    <!-- <button  class="btngithub"><img src="img/pngwing 4.png">GITHUB</button> -->
     </Section>
 
     <Section id="CONTACT">
@@ -153,13 +167,38 @@
              
            
             <div class="contact">
-                <img src="img/pngwing 1.png" alt="">
+
+                <a class="social-link" href="https://www.linkedin.com/in/alexis-soufflet-177453272/" target="_blank">
+                    <img src="img/pngwing 1.png" alt="Lien vers Linkedin">
+                </a>
                 <img src="img/pngwing 2.png" alt="">
+
+
+                <form  method="post">
+                    <label for="nom">NAME</label>
+                    <input type="text" name="nom" id="nom">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email">
+                    <label for="message"></label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Envoyer">
+                </form>
+                
             </div>
  
+        
+        
         </article>
         </div>
+
+
+
     </Section>
+
+
+    
+
+    
 
 
 </main>

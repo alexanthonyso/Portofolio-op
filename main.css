@@ -1,5 +1,6 @@
 *{
     font-family: "Montserrat", sans-serif;
+
 }
 
 
@@ -35,10 +36,12 @@ h3{
   }
 
 header{
+  
     scroll-snap-align: start;
+    width: 95%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    padding-top: 50px;
    
 
 }
@@ -66,24 +69,23 @@ header{
 }
 
 
-.btngithub{
-  display: flex;
-  align-items: center;
- gap: 25%;
-  width: 270px;
-  height: 55px;
+.btngithub,.btnmore{
+  
   border: 1px  dashed #000000;
   cursor: pointer;
   background: none;
 }
 
-.btngithub:hover{
+.btngithub:hover,.btnmore:hover{
   border: 1px solid  #000000 ;
+  background-color: #383838;
+  color: aliceblue;
   
   
 }
 
   body {
+    width: 100%;
     margin: 0;
     font-family: system-ui, sans-serif;
     max-height: 100%;
@@ -95,7 +97,26 @@ header{
   nav ul {
     list-style: none;
     display: flex;
+    gap: 5%;
+
   }
+
+  .nav{
+    border: 1px  dashed #000000;
+    cursor: pointer;
+    background: none;
+    display: flex;
+    gap: 10px;
+
+  }
+
+  .nav :hover{
+
+    border: 1px solid  #000000 ;
+    background-color: #383838;
+  }
+
+  
 
 .photo{
 border: 1px dashed  #000000 ;
@@ -111,10 +132,28 @@ height: 408px;
     width: 614px;
     height: 408px;
 }
+.more:hover, .skill:hover, .info:hover, .project:hover{
+
+  border: 1px solid  #000000 ;
+
+}
+
+
+
+.skilltext p:hover{
+
+  border: 1px solid  #000000 ;
+}
+
+.languagetext p:hover{
+  
+  border: 1px solid  #000000 ;
+}
 
 .skill p,.info p{
 
   margin-left: 2%;
+  margin-bottom: 2%;
 }
 
 .skilltext {
@@ -204,11 +243,18 @@ height: 408px;
 
 .project img:hover{
 
-
+cursor: pointer;
   filter: none;
 }
 
+form{
 
+  display: flex;
+  flex-direction: column;
+  margin-left: 50%;
+  
+
+}
 .info{
    
     border: 1px dashed  #000000 ;
@@ -314,3 +360,9 @@ text-decoration: none;
     font-size: 20px;
   }
   
+
+
+input, textarea {
+
+  border: 1px dashed #000000;
+}
