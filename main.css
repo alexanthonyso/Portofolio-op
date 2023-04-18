@@ -379,4 +379,6 @@ input, textarea{
  background: none;
 }
 
-
+.submit {
+  margin-top: 10%;
+}
