@@ -1,5 +1,6 @@
 * {
   font-family: "Montserrat", sans-serif;
+
 }
 
 html,
@@ -7,6 +8,8 @@ body,
 section {
   block-size: 100%;
 }
+
+
 
 html {
   scroll-behavior: smooth;
@@ -26,6 +29,11 @@ h2 {
 h3 {
   margin-left: 2%;
   font-size: 18px;
+}
+
+h4{
+
+font-size: 35px;
 }
 
 p {
@@ -116,6 +124,11 @@ nav ul {
   width: 614px;
   height: 408px;
 }
+
+.skill p {
+  font-size: 17px;
+}
+
 .more:hover,
 .skill:hover,
 .info:hover,
@@ -221,6 +234,7 @@ nav ul {
   border: 1px dashed #000000;
   width: 616px;
   height: 410px;
+  position: relative;
 }
 
 .project .text {
@@ -228,13 +242,28 @@ nav ul {
   margin: 1% 0 0 1%;
   position: absolute;
   color: white;
+  z-index: 1;
+}
+.titleproject1 {
+  position: absolute;
+  color: white;
+  z-index: 2;
+  top: 35%;
+  left: 40%;
 }
 
-/* .project img {
 
+.titleproject2 {
+  position: absolute;
+  color: white;
+  z-index: 2;
+  top: 35%;
+  left: 25%;
+}
+
+.project img {
   filter: grayscale(100%);
-
-} */
+}
 
 .project img:hover {
   cursor: pointer;
@@ -318,6 +347,7 @@ section:nth-of-type(odd) {
   border-right: 3px solid;
 }
 
+
 @keyframes typing {
   from {
     width: 0;
@@ -339,3 +369,14 @@ input,
 textarea {
   border: 1px dashed #000000;
 }
+
+label, input{
+
+  padding: 3%;
+}
+
+input, textarea{
+ background: none;
+}
+
+
