@@ -1,6 +1,5 @@
 * {
   font-family: "Montserrat", sans-serif;
-
 }
 
 html,
@@ -8,8 +7,6 @@ body,
 section {
   block-size: 100%;
 }
-
-
 
 html {
   scroll-behavior: smooth;
@@ -31,9 +28,8 @@ h3 {
   font-size: 18px;
 }
 
-h4{
-
-font-size: 35px;
+h4 {
+  font-size: 35px;
 }
 
 p {
@@ -252,7 +248,6 @@ nav ul {
   left: 40%;
 }
 
-
 .titleproject2 {
   position: absolute;
   color: white;
@@ -347,7 +342,6 @@ section:nth-of-type(odd) {
   border-right: 3px solid;
 }
 
-
 @keyframes typing {
   from {
     width: 0;
@@ -364,21 +358,98 @@ article {
   font-weight: 500;
   font-size: 20px;
 }
+.bloc1 {
+  display: flex;
+}
 
 input,
 textarea {
   border: 1px dashed #000000;
 }
 
-label, input{
-
+label,
+input {
   padding: 3%;
+  margin-top: 3%;
 }
 
-input, textarea{
- background: none;
+input,
+textarea {
+  background: none;
+  resize: none;
 }
 
 .submit {
   margin-top: 10%;
+}
+
+.wrapper {
+  position: relative;
+  height: 300px;
+  width: 600px;
+  margin: 50px 0;
+
+  display: flex;
+  flex-direction: row;
+
+  transition: all 200ms ease-in-out;
+}
+
+.image-wrapper {
+  border: 1px dashed black;
+  height: 300px;
+  width: 450px;
+  overflow: hidden;
+  cursor: pointer;
+
+  transition: all 200ms ease-in-out;
+}
+
+.wrapper img {
+  height: 300px;
+  width: 450px;
+  object-fit: cover;
+  object-position: top;
+  filter: grayscale(100%);
+  transition: all 200ms ease-in-out;
+}
+
+.book-design-image {
+  object-position: center;
+}
+
+.header-wrapper {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  left: 150px;
+  transition: all 200ms ease-in-out;
+  overflow: hidden;
+}
+
+h4 {
+  position: relative;
+  bottom: 0px;
+  height: 250px;
+  padding-top: 20%;
+  color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+  transition: all 200ms ease-in-out;
+}
+
+.wrapper:hover img {
+  filter: none;
+  transform: scale(2);
+  /*object-position: bottom;*/
+}
+
+.wrapper:hover h4 {
+  bottom: 300px;
+  transform: scale(0.4);
+}
+
+.wrapper:hover .image-wrapper {
+  border: 1px solid black;
+  width: 800px;
 }
