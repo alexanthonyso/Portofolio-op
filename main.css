@@ -20,7 +20,6 @@ h1 {
 
 h2 {
   display: flex;
-  flex-direction: row-reverse;
 }
 
 h3 {
@@ -67,9 +66,11 @@ header {
 
 .btngithub,
 .btnmore {
+  display: flex;
   border: 1px dashed #000000;
   cursor: pointer;
   background: none;
+  align-items: center;
 }
 
 .btngithub:hover,
@@ -184,7 +185,7 @@ nav ul {
   height: 408px;
 }
 
-.bloc1 {
+.bloc0 {
   display: flex;
   gap: 97px;
   margin: 10%;
@@ -268,7 +269,9 @@ nav ul {
 form {
   display: flex;
   flex-direction: column;
-  margin-left: 50%;
+  /* margin-left: 50%; */
+  width: 400px;
+  margin-top: -2%;
 }
 .info {
   border: 1px dashed #000000;
@@ -277,22 +280,32 @@ form {
 }
 .contact {
   display: flex;
-  gap: 10px;
+  gap: 300px;
+}
+.linkedin {
+  display: flex;
+}
+
+.linkedin p {
+  margin-left: 15%;
+  margin-top: 2%;
 }
 
 .contact img {
-  width: 88px;
-  height: 88px;
   border: 1px dashed #000000;
+  height: 30px;
 }
 
 .contact img:hover {
   border: 1px solid #000000;
   cursor: pointer;
 }
+
+.social-link:hover {
+  cursor: pointer;
+}
 nav ul li {
   height: 100%;
-
   font-size: 16px;
   padding-inline: 18px;
   /* border: 1px dashed #000000; */
@@ -358,9 +371,6 @@ article {
   font-weight: 500;
   font-size: 20px;
 }
-.bloc1 {
-  display: flex;
-}
 
 input,
 textarea {
@@ -388,7 +398,7 @@ textarea {
   height: 300px;
   width: 600px;
   margin: 50px 0;
-
+  cursor: pointer;
   display: flex;
   flex-direction: row;
 
@@ -452,4 +462,79 @@ h4 {
 .wrapper:hover .image-wrapper {
   border: 1px solid black;
   width: 800px;
+}
+
+/* MODALE */
+
+.modal {
+  display: none;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Afficher la fenêtre modale lorsqu'elle est ciblée par un lien supprimer */
+.modal:target {
+  display: table;
+  position: absolute;
+}
+
+/* la fenêtre modale  */
+.modal-dialog {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* Le contenu de la modale */
+.modal-content {
+  margin: auto;
+  background-color: #f3f3f3;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  border: 1px #777 solid;
+  text-align: justify;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  animation-name: slideDownFadeIN;
+  animation-duration: 0.5s;
+}
+
+/* Bouton servant à fermer la fenêtre modale */
+.closebtn {
+  text-decoration: none;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+  color: #000;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.container p {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.btn {
+  display: flex;
+  flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
