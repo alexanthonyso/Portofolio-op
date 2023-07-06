@@ -15,15 +15,20 @@
     <!--STYLE-->
 
     <link rel="stylesheet" href="main.css" />
+    
+    <!--TITLE-->
 
     <title>Portofolio Alexis Soufflet</title>
+
+
+    
   </head>
 
   <body>
     <header>
       <!--BUTTON HOME-->
 
-      <button class="btnhome" onclick="index.html"></button>
+      <a href="#HOME" class="btnhome"></a>
 
       <!--NAVIGATION-->
 
@@ -37,7 +42,7 @@
     </header>
 
     <main>
-      <section>
+      <section id="HOME">
         <article class="home">
           <div class="typing-demo">
             <p>HI,MY NAME IS</p>
@@ -57,12 +62,13 @@
 
       <nav class="side"></nav>
 
+      <!-- ABOUT -->
       <section id="ABOUT">
         <h2>ABOUT</h2>
 
         <div class="bloc0">
           <article class="photo">
-            <img src="img/blank-profile-picture-gaf541ad94_640.png" alt="" />
+            <img src="img/profile picture.png" alt="" />
           </article>
 
           <article class="more">
@@ -98,113 +104,115 @@
             <p>OPEN CLASSROOMS - WEB DEVEVLOPER</p>
             <p>Decembre 2022 - Aout 2023</p>
             <p>Construire un site web responsive et dynamique</p>
-             
-            <p>Créer des API et des bases de données </p>
-             
+             
+            <p>Créer des API et des bases de données </p>
+             
             <p>
               Optimiser les performances et réaliser la maintenance de sites web
               déjà existants
             </p>
-              
+              
             <p>Gérer un projet web de A à Z</p>
           </article>
         </div>
       </section>
 
+
+      <!-- WORK -->
       <section id="WORK">
-        
         <h2> WORK</h2>
-        <article class="bloc0">
-        <div class="wrapper">
-          <div class="image-wrapper">
-            <a href="#id01">
-          <img src="img/project/booki (2).png" alt="projet"/>
-      </div>
-       
-        <div class="header-wrapper">
-          <h4>BOOKI</h4>
-          <h4>SEE PROJECT</h4>
-          
-        </div>
-     
-      </div>
-
-          <div class="wrapper">
-            <div class="image-wrapper">
-              <a href="#id02">
-            <img src="img/project/NINA.png"  alt=""
-          /></div>
-          
-
-          <div class="header-wrapper">
-            <h4>NINA CARDUCCI</h4>
-            <h4>SEE PROJECT</h4>
-          </div>
+        <div class="bloc2">
+        
+          <div class="card">
+            
+            <div class="card-front">
+              <h3>BOOKI</h3>
+              <img src="img/project/P01.png" alt=""  />
             </div>
-          
-        
-        
-        </div>
-      </article>
-
-
-        </div>
-   
+            <div class="card-back">
+              <span class="card-square subtle">01</span>
+              <span class="card-title subtle">PROJECT BOOKI</span>
+              <h3>
+                <span class="arrow arrow-left"></span>DESCRIPTION
+                <span class="arrow arrow-right"></span>
+              </h3>
      
-        <a href="#id01"></a>
+              <span class="card-description subtle">Créez la page d'accueil d'une agence de voyage avec HTML & CSS.</span>
+              <h3>
+                <span class="arrow arrow-left"></span>SKILLS DEVELOPED
+                <span class="arrow arrow-right"></span>
+              </h3>
+              <div class="skilltext">
+              
+                <p>Html5</p>
+                  <p>Css3</p>
+                  <p>Figma</p>
+                  <p>Github</p>
+              </div>
+       <div class="btn">
+                  <a href="https://github.com/alexanthonyso/Booki" target="_blank">
+                    <button class="btngithub">
+                      <img src="img/pngwing 4.png" alt="GitHub Logo">GITHUB
+                    </button>
+                  </a>
+                </div>
+            </div>
+        </div>
 
-        <div id="id01" class="modal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="container"> 
-                <a href="#work" class="closebtn">×</a>
-                <h3><span class="arrow arrow-left"></span>BOOKI<span class="arrow arrow-right"></span></h3>
-              </div>
-              <div class="container">
-                <video class="modal-video" src="videos/booki.webm" controls ></video>
-                <p>Créez la page d'accueil d'une agence de voyage avec HTML & CSS</p>
-                <p>Les problématiques que vous avez rencontrées et comment vous les avez surmontées</p>
-                <p>Les compétences qu'il vous a permis de développer</p>
-              </div>
-              <div class="btn">
-                <a href="https://github.com/alexanthonyso/Booki">
+        <div class="card">
+            
+          <div class="card-front">
+            <h3>NINA CARDUCCI</h3>
+            <img src="img/project/P02.png" alt=""  />
+          </div>
+          <div class="card-back">
+            <span class="card-square subtle">02</span>
+            <span class="card-title subtle">PROJECT NINA CARDUCCI</span>
+            <h3>
+              <span class="arrow arrow-left"></span>DESCRIPTION
+              <span class="arrow arrow-right"></span>
+            </h3>
+   
+            <span class="card-description subtle">Débuggez et optimisez un site de photographe</span>
+            <h3>
+              <span class="arrow arrow-left"></span>SKILLS DEVELOPED
+              <span class="arrow arrow-right"></span>
+            </h3>
+            <div class="skilltext">
+            
+              <p>Schema.org</p>
+              <p>Lighthouse</p>
+              <p>Wave</p>
+            </div>
+     <div class="btn">
+                <a href="https://github.com/alexanthonyso/master" target="_blank">
                   <button class="btngithub">
                     <img src="img/pngwing 4.png" alt="GitHub Logo">GITHUB
                   </button>
                 </a>
               </div>
-            </div>
           </div>
-        </div>
-        
-        <a href="#id02"></a>
-        
-        <div id="id02" class="modal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="container"> 
-                <a href="#work" class="closebtn">×</a>
-                <h3><span class="arrow arrow-left"></span>NINA CARDUCCI<span class="arrow arrow-right"></span></h3>
-              </div>
-              <div class="container">
-                <video class="modal-video" src="videos/nina.webm" controls></video>
-                <p>Débuggez et optimisez un site de photographe</p>
-                <p>Les problématiques que vous avez rencontrées et comment vous les avez surmontées</p>
-                <p>Les compétences qu'il vous a permis de développer</p>
-              </div>
-              <div class="btn">
-                <a href="https://github.com/alexanthonyso/master">
-                <button class="btngithub">
-                  <img src="img/pngwing 4.png" alt="GitHub Logo">GITHUB
-                </button>
-              </a>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
 
 
+
+
+
+
+          </div>
+      
+  
+        </div>
       </section>
+     
+        
+          
+        
+      
+        
+
+
+   <!-- CONTACT -->
 
       <section id="CONTACT">
         <h2>CONTACT</h2>
@@ -212,27 +220,31 @@
           <article>
             <div class="contact">
               <div class="linkedin">
-              <a href="https://www.linkedin.com/in/alexis-soufflet-177453272/">
+              <a href="https://www.linkedin.com/in/alexis-soufflet-177453272/" target="_blank">
               <img src="img/pngwing 1.png"  alt="Lien vers Linkedin" />
               <p>LINKEDIN</a></p>
             
               
             </div>
 
-              <form method="post">
-                <label for="nom">NAME</label>
-                <input type="text" name="nom" id="nom" />
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" />
-                <label for="message"></label>
-                <textarea
-                  name="message"
-                  id="message"
-                  cols="30"
-                  rows="10"
-                ></textarea>
-                <input type="submit" value="Envoyer" />
-              </form>
+            <form method="post">
+              <label for="nom">NAME</label>
+              <input type="text" name="nom" id="nom" />
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" id="email" />
+              <label for="message"></label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <input type="submit" value="Envoyer" />
+            </form>
+            
+              
+            </div>
+          
             </div>
           </article>
         </div>
@@ -240,5 +252,7 @@
     </main>
 
     <footer></footer>
+
+
   </body>
 </html>
