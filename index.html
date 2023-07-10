@@ -15,29 +15,25 @@
     <!--STYLE-->
 
     <link rel="stylesheet" href="main.css" />
-    
+    <link rel="stylesheet" href="media.css" />
+
     <!--TITLE-->
 
     <title>Portofolio Alexis Soufflet</title>
-
-
-    
   </head>
 
   <body>
     <header>
       <!--BUTTON HOME-->
 
-      <a href="#HOME" class="btnhome"></a>
+      <a href="index.html" class="btnhome active"></a>
 
       <!--NAVIGATION-->
 
       <nav>
-        <ul>
-          <li class="nav"><a href="#ABOUT">ABOUT</a></li>
-          <li class="nav"><a href="#WORK">WORK</a></li>
-          <li class="nav"><a href="#CONTACT">CONTACT</a></li>
-        </ul>
+        <a href="about.html">ABOUT</a>
+        <a href="work.html">WORK</a>
+        <a href="contact.html">CONTACT</a>
       </nav>
     </header>
 
@@ -62,197 +58,9 @@
 
       <nav class="side"></nav>
 
-      <!-- ABOUT -->
-      <section id="ABOUT">
-        <h2>ABOUT</h2>
-
-        <div class="bloc0">
-          <article class="photo">
-            <img src="img/profile picture.png" alt="" />
-          </article>
-
-          <article class="more">
-            <h3>
-              <span class="arrow arrow-left"></span>SKILLS<span
-                class="arrow arrow-right"
-              ></span>
-            </h3>
-            <div class="skilltext">
-              <p>JavaScript</p>
-              <p>Html5</p>
-              <p>Css3</p>
-              <p>React</p>
-              <p>Figma</p>
-            </div>
-
-            <h3>
-              <span class="arrow arrow-left"></span>LANGUAGE<span
-                class="arrow arrow-right"
-              ></span>
-            </h3>
-            <div class="languagetext">
-              <p>French</p>
-              <p>English</p>
-            </div>
-          </article>
-
-          <article class="skill">
-            <h3>
-              <span class="arrow arrow-left"></span>FORMATION
-              <span class="arrow arrow-right"></span>
-            </h3>
-            <p>OPEN CLASSROOMS - WEB DEVEVLOPER</p>
-            <p>Decembre 2022 - Aout 2023</p>
-            <p>Construire un site web responsive et dynamique</p>
-             
-            <p>Créer des API et des bases de données </p>
-             
-            <p>
-              Optimiser les performances et réaliser la maintenance de sites web
-              déjà existants
-            </p>
-              
-            <p>Gérer un projet web de A à Z</p>
-          </article>
-        </div>
-      </section>
-
-
-      <!-- WORK -->
-      <section id="WORK">
-        <h2> WORK</h2>
-        <div class="bloc2">
-        
-          <div class="card">
-            
-            <div class="card-front">
-              <h3>BOOKI</h3>
-              <img src="img/project/P01.png" alt=""  />
-            </div>
-            <div class="card-back">
-              <span class="card-square subtle">01</span>
-              <span class="card-title subtle">PROJECT BOOKI</span>
-              <h3>
-                <span class="arrow arrow-left"></span>DESCRIPTION
-                <span class="arrow arrow-right"></span>
-              </h3>
-     
-              <span class="card-description subtle">Créez la page d'accueil d'une agence de voyage avec HTML & CSS.</span>
-              <h3>
-                <span class="arrow arrow-left"></span>SKILLS DEVELOPED
-                <span class="arrow arrow-right"></span>
-              </h3>
-              <div class="skilltext">
-              
-                <p>Html5</p>
-                  <p>Css3</p>
-                  <p>Figma</p>
-                  <p>Github</p>
-              </div>
-       <div class="btn">
-                  <a href="https://github.com/alexanthonyso/Booki" target="_blank">
-                    <button class="btngithub">
-                      <img src="img/pngwing 4.png" alt="GitHub Logo">GITHUB
-                    </button>
-                  </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            
-          <div class="card-front">
-            <h3>NINA CARDUCCI</h3>
-            <img src="img/project/P02.png" alt=""  />
-          </div>
-          <div class="card-back">
-            <span class="card-square subtle">02</span>
-            <span class="card-title subtle">PROJECT NINA CARDUCCI</span>
-            <h3>
-              <span class="arrow arrow-left"></span>DESCRIPTION
-              <span class="arrow arrow-right"></span>
-            </h3>
-   
-            <span class="card-description subtle">Débuggez et optimisez un site de photographe</span>
-            <h3>
-              <span class="arrow arrow-left"></span>SKILLS DEVELOPED
-              <span class="arrow arrow-right"></span>
-            </h3>
-            <div class="skilltext">
-            
-              <p>Schema.org</p>
-              <p>Lighthouse</p>
-              <p>Wave</p>
-            </div>
-     <div class="btn">
-                <a href="https://github.com/alexanthonyso/master" target="_blank">
-                  <button class="btngithub">
-                    <img src="img/pngwing 4.png" alt="GitHub Logo">GITHUB
-                  </button>
-                </a>
-              </div>
-          </div>
-      </div>
-
-
-
-
-
-
-          </div>
-      
-  
-        </div>
-      </section>
-     
-        
-          
-        
-      
-        
-
-
-   <!-- CONTACT -->
-
-      <section id="CONTACT">
-        <h2>CONTACT</h2>
-        <div class="bloc3">
-          <article>
-            <div class="contact">
-              <div class="linkedin">
-              <a href="https://www.linkedin.com/in/alexis-soufflet-177453272/" target="_blank">
-              <img src="img/pngwing 1.png"  alt="Lien vers Linkedin" />
-              <p>LINKEDIN</a></p>
-            
-              
-            </div>
-
-            <form method="post">
-              <label for="nom">NAME</label>
-              <input type="text" name="nom" id="nom" />
-              <label for="email">EMAIL</label>
-              <input type="email" name="email" id="email" />
-              <label for="message"></label>
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-              ></textarea>
-              <input type="submit" value="Envoyer" />
-            </form>
-            
-              
-            </div>
-          
-            </div>
-          </article>
-        </div>
-      </section>
     </main>
 
     <footer></footer>
-
-
   </body>
+  
 </html>
